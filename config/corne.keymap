@@ -51,9 +51,9 @@
 
             label = "BASE";
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp F  &kp P           &kp G        &kp J    &kp L  &kp U      &kp Y    &kp P     &kp BSPC
-&kp LCTRL     &kp A  &kp R  &kp S  &kp T           &kp D        &kp H    &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LEFT_ALT  &kp Z  &kp X  &kp C  &kp V           &kp B        &kp K    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp TAB       &kp Q  &kp W  &kp F  &kp P           &kp G        &kp J    &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
+&kp LCTRL     &kp A  &kp R  &kp S  &kp T           &kp D        &kp H    &kp N  &kp E      &kp I    &kp O          &kp SQT
+&kp LEFT_ALT  &kp Z  &kp X  &kp C  &kp V           &kp B        &kp K    &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
                             &mo 1  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
@@ -83,10 +83,10 @@
 
             label = "RIGHT";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT    &kp HASH        &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DELETE
-&kp LCTRL  &kp SEMI  &kp HOME  &kp END         &kp COLON     &kp CAPS     &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans    &trans          &trans        &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                               &kp LEFT_SHIFT  &kp LEFT_GUI  &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB    &kp EXCL   &kp AT         &kp HASH        &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DELETE
+&kp LCTRL  &kp SEMI   &kp HOME       &kp END         &kp COLON     &kp CAPS     &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &kp LC(Z)  &kp LC(LS(Z))  &trans          &trans        &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                     &kp LEFT_SHIFT  &kp LEFT_GUI  &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
     };
