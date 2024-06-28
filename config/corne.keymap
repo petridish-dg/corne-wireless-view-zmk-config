@@ -37,10 +37,10 @@
 
             label = "Base";
             bindings = <
-&HomeBasedAgent  &kp Q           &kp W           &kp F        &kp P             &kp G      &kp J    &kp L            &kp U        &kp Y       &kp SQT          &kp BSPC
-&agentPhone      &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp D      &kp H    &mt RSHFT N      &mt LCTRL E  &mt RALT I  &mt RIGHT_GUI O  &kp SQT
-&kp LGUI         &kp Z           &kp X           &kp C        &kp V             &kp B      &kp K    &kp M            &kp COMMA    &kp DOT     &kp FSLH         &kp ESC
-                                                 &kp ESC      &lt 2 SPACE       &kp TAB    &kp RET  &lt 1 BACKSPACE  &kp DELETE
+&HomeBasedAgent  &kp Q           &kp W           &kp F        &kp P             &kp G      &kp J        &kp L            &kp U        &kp Y       &kp SQT          &kp BSPC
+&agentPhone      &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp D      &kp H        &mt RSHFT N      &mt LCTRL E  &mt RALT I  &mt RIGHT_GUI O  &kp SQT
+&kp LGUI         &kp Z           &kp X           &kp C        &kp V             &kp B      &kp K        &kp M            &kp COMMA    &kp DOT     &kp FSLH         &kp ESC
+                                                 &kp ESC      &lt 2 SPACE       &kp TAB    &lt 3 ENTER  &lt 1 BACKSPACE  &kp DELETE
             >;
         };
 
