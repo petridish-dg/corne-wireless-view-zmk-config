@@ -37,10 +37,10 @@
 
             label = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F       &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S       &kp T  &kp D        &kp H    &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LGUI   &kp Z  &kp X  &kp C       &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LSHIFT  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&HomeBasedAgent  &kp Q           &kp W           &kp F        &kp P             &kp G      &kp J    &kp L            &kp U        &kp Y       &kp SQT          &kp BSPC
+&agentPhone      &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp D      &kp H    &mt RSHFT N      &mt LCTRL E  &mt RALT I  &mt RIGHT_GUI O  &kp SQT
+&kp LGUI         &kp Z           &kp X           &kp C        &kp V             &kp B      &kp K    &kp M            &kp COMMA    &kp DOT     &kp FSLH         &kp ESC
+                                                 &kp ESC      &lt 2 SPACE       &kp TAB    &kp RET  &lt 1 BACKSPACE  &kp DELETE
             >;
         };
 
@@ -53,26 +53,28 @@
 
             label = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3         &kp N4           &kp N5       &kp N6   &kp N7    &kp N8    &kp N9        &kp N0     &kp DELETE
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &HomeBasedAgent  &trans       &trans   &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&kp LSHFT   &kp LEFT_ALT  &trans        &kp C_AC_COPY  &agentPhone      &trans       &trans   &trans    &trans    &trans        &trans     &trans
-                                        &kp LGUI       &trans           &kp SPACE    &kp RET  &trans    &kp RALT
+&kp TAB     &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &kp N6       &kp N7           &kp N8    &kp N9        &kp N0     &kp DELETE
+&bt BT_CLR  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &trans       &kp LEFT         &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+&kp LSHFT   &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &trans       &trans           &trans    &trans        &trans     &trans
+                               &kp DOT  &kp N0  &kp MINUS    &lt 3 SPACE  &lt 1 BACKSPACE  &kp RALT
             >;
         };
 
-        raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            label = "Raise";
+        layer_2 {
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp SEMI  &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp CAPS  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+                        &trans  &trans  &trans    &trans    &trans    &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RBRC)     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)     &trans  &trans  &trans  &trans  &trans  &trans
+                                     &kp LS(LPAR)   &kp LS(RPAR)   &kp LS(UNDER)    &trans  &trans  &trans
             >;
         };
     };
